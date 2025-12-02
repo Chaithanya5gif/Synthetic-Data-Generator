@@ -73,3 +73,10 @@ def main():
     except Exception:
         print("❌ Invalid subcategory selection!")
         return
+    
+    # Step 3: Count
+    try:
+        count = int(input("\nEnter number of rows to generate: ").strip())
+    except ValueError:
+        print("❌ Invalid count!")
+        return
